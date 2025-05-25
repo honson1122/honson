@@ -1,14 +1,13 @@
 document.querySelectorAll('.slider').forEach(slider => {
   let scrollAmount = 0;
-  const slideInterval = setInterval(() => {
-    if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
-      scrollAmount = 0;
+  const slideStep = 320;
+  const slideInterval = 3000;
+
+  setInterval(() => {
+    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+      slider.scrollTo({ left: 0, behavior: 'smooth' });
     } else {
-      scrollAmount += 300;
+      slider.scrollBy({ left: slideStep, behavior: 'smooth' });
     }
-    slider.scrollTo({
-      left: scrollAmount,
-      behavior: 'smooth'
-    });
-  }, 3000);
+  }, slideInterval);
 });
