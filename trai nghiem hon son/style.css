@@ -1,0 +1,40 @@
+/* Đặt font dễ đọc */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 0 15px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Tiêu đề trang */
+header h1 {
+  color: #0077b6;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Các block bài viết */
+.article-block {
+  background-color: white;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.article-block h2 {
+  color: #023e8a;
+  margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
